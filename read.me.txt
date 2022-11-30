@@ -1,0 +1,13 @@
+This tool reads a CityGML file with the libCityGML library and adds roof overhangs to the buildings. The size of the overhangs is determined either by textures or by an additional point cloud. The textures are analyzed with methods of the openCV library. Point clouds are read in LAS format with the liblas library. Alternatively, point clouds can be also processed in an ASCII xyz format.
+
+The tool is written in C-style but has to be compiled as C++ due to the used library functions. Dependencies: openCV, CityGML library and LAS library.
+
+The included median cut algorithm is taken from
+http://en.literateprograms.org/Median_cut_algorithm_(C_Plus_Plus)?oldid=19175
+This algorithm is provided under the Creative Commons CC0 1.0 license that holds for the other parts of the code as well.
+
+The algorithm is described in the paper
+
+Steffen Goebbels, Regina Pohle-Froehlich: Automatic Reconstruction of Roof Overhangs for 3D City Models
+
+Please cite this paper if you use the code. 
